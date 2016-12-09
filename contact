@@ -1,0 +1,32 @@
+<html>
+<head>
+ <title>contact us</title>
+</head>
+ <body>
+  <style type="text/css">
+   body {
+   background-color:pink;
+   margin-left:10%;
+   margin-right:10%;
+   border:4px dotted white;
+   padding;20px 20px 20px 20px;
+   font-family:ariel
+      }
+      </style>
+ <h1>
+ Contact Us
+ </h1>
+ <P>
+  Mobile : (650)431 8483
+  Fax    :408 471 7844
+  </p>
+  <h2>
+  address :
+  </h2>
+  <p>
+  201 W california ave
+  sunnyvale
+  94086
+  </p>
+ </body>
+</html>
