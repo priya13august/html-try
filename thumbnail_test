@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Head First Lounge Elixir</title>
+    <style type="text/css">
+    body {
+          background-color: #eaf3da;
+          margin-left: 20% ;
+          margin-right: 20% ;
+          border: 2px dotted black;
+          padding: 10px 10px 10px 10px;
+          font-family: sans-serif;
+          }
+    </style>
+
+</head>
+<body>
+<h1>Our Elixir</h1>
+<h2>Green Kiwi cooler</h2>
+<p>
+ <img src="thumbnail/green-kiwi_med.jpg" alt="kiwi juice">
+    <br>
+    full of vitamins and minerals.
+</p>
+<h2>Orange basil juice</h2>
+<p>
+    <img src="thumbnail/orang_med.jpg" alt="Goodness of  Basil">
+    <br>
+    orange n basil freshner.
+</p>
+<h2>Mango bliss</h2>
+<p>
+ <img src="thumbnail/yellow_med.jpg" alt="mango mantra">
+    <br>
+    mango mantra.
+</p>
+<p>
+<a href="..lounge.html">Back to the lounge</a>
+</p>
+</body>
+</html>
+
