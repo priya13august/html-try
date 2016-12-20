@@ -1,0 +1,29 @@
+@font-face
+{
+    font-family: "Emblema One";
+    src: url("http://Wickedlysmart.com/htmlcss/htmltry/kauai trip/EmblemaOne-Regular.woff"),
+    url("http://Wickedlysmart.com/htmlcss/htmltry/kauai trip/EmblemaOne-Regular.ttf");
+}
+body
+  {
+    font-family: Verdana, Geneva, Arial, sans-serif ;
+      font-size: small;
+}
+h1, h2
+{
+   color:red;
+   font-size: 150%
+   }
+   h1
+{
+    font-family: "Emblema One", sans-serif;
+    border-bottom:1px solid black ;
+}
+   p
+       {
+           color:green;
+       }
+em
+{
+    font-family: serif;
+}
