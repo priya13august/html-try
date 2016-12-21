@@ -19,6 +19,14 @@ h1, h2
     font-family: "Emblema One", sans-serif;
     border-bottom:1px solid black ;
 }
+h2
+{
+    font-weight: normal;
+}
+blockquote
+{
+    font-style: oblique;
+}
    p
        {
            color:green;
