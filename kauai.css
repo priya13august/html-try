@@ -36,3 +36,25 @@ em
 {
     font-family: serif;
 }
+.Intro
+{
+    line-height: 1.9em;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times,serif;
+    color: #444411;
+    boarder_color: white;
+    boarder-width: 1px;
+    boarder-style: dashed;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+    background-color: #a7a7ce;
+    padding: 25px;
+    padding-left:80px;
+    margin: 30px;
+    margin-right: 250px;
+    background-image: url(images/background.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    }
