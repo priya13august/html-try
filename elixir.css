@@ -19,14 +19,15 @@
    color:black;
 }
 #elixirs h2
-{color: crimson;
+{
+    color: crimson;
 }
 #elixirs a:link
 {
     color: #007e7e;
 }
 #elixirs a:visited
-{color:#333333;
+{color:brown;
 }
 #elixirs a:hover
 {

@@ -51,14 +51,15 @@ h2
     background-repeat: no-repeat;
     background-position: top left;
     }
-#elixirs a:link
+#refresh a:link
 {
     color: #007e7e;
 }
-#elixirs a:visited
-{color:#333333;
+#refresh a:visited
+{
+    color:brown;
 }
-#elixirs a:hover
+#refresh a:hover
 {
     background:#f88396;
     color:#0d5353;
