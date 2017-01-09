@@ -17,13 +17,15 @@ h1, h2
    h1
 {
     font-family: "Emblema One", sans-serif;
-    
+}
 h2
 {
     font-weight: normal;
 }
 blockquote
 {
+    font-size: 120%;
+        font-color:blue;
     font-style: oblique;
 }
    p
