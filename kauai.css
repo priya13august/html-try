@@ -9,10 +9,10 @@ body
     font-family: Verdana, Geneva, Arial, sans-serif ;
       font-size: small;
 }
-h1, h2
+h1
 {
    color:red;
-   font-size: 150%
+   font-size: 300%
    }
    h1
 {
@@ -20,7 +20,9 @@ h1, h2
 }
 h2
 {
+    font-size: 150%;
     font-weight: normal;
+    color:brown;
 }
 blockquote
 {
@@ -41,20 +43,21 @@ em
     line-height: 1.9em;
     font-style: italic;
     font-family: Georgia, "Times New Roman", Times,serif;
-    color: #444411;
-    boarder_color: white;
+    color: black;
+    font-size-adjust: auto;
+    boarder_color: black;
     boarder-width: 1px;
     boarder-style: dashed;
     border-bottom-left-radius: 3em;
     border-bottom-right-radius: 3em;
     border-top-right-radius: 3em;
     border-top-left-radius: 3em;
-    background-color: #a7a7ce;
+    background-color:darkseagreen;
     padding: 25px;
     padding-left:80px;
     margin: 30px;
     margin-right: 250px;
-    background-image: url(images/background.gif);
-    background-repeat: no-repeat;
-    background-position: top left;
+    background-image: url(images/doll.jpeg);
+    background-repeat:no-repeat;
+    background-position:right;
     }
