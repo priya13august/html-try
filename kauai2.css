@@ -1,0 +1,93 @@
+
+body
+  {
+      background-color: beige;
+      font-family: Georgia, "Times New Roman",Times, serif ;
+      font-size: small;
+      margin: 0px;
+    
+#header
+{
+    background-color:beige;
+    margin: 10px;
+    height: 108px;
+}
+#main
+{
+    @font-face
+{
+    font-family: "Emblema One";
+    src: url("emblema font/emblema-one-v5-latin/emblema-one-v5-latin-regular.woff"),
+    url("emblema font/emblema-one-v5-latin/emblema-one-v5-latin-regular.ttf");
+}
+      h1
+{
+    font-family: "Emblema One", sans-serif;
+    font-size: 200%;
+    color: brown;
+}
+h2
+{
+    font-size: 150%;
+    font-weight: normal;
+    color:brown;
+}
+}
+    background-color: #efe5d0;
+    font-size: 105%;
+    padding: 15px;
+    margin:0px 10px 10px 10px;
+    
+}  
+#allcontent
+{
+    width: 800px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: cornsilk;
+}
+#footer
+{
+    background-color: burlywood;
+    color: brown;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    font-size: 90%;
+}
+blockquote
+{
+    font-display: block;
+    font-size: 100%;
+        font-color:blue;
+    font-style: oblique;
+}
+em
+{
+    font-color: brown;
+    font-family: serif;
+}
+.Intro
+{
+    line-height: 1.9em;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times,serif;
+    color: black;
+    font-size-adjust: auto;
+    boarder_color: black;
+    boarder-width: 1px;
+    boarder-style: dashed;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+    background-color:darkseagreen;
+    padding: 25px;
+    padding-left:80px;
+    margin: 30px;
+    margin-right: 250px;
+    background-image: url(images/doll.jpeg);
+    background-repeat:no-repeat;
+    background-position:right;
+    }
+

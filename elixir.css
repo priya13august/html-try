@@ -6,12 +6,7 @@
 }
 #elixirs
 {
-    font:small/1.6em Verdana,Helvetica,Arial,sans-serif; 
-    line-height:normal;
-    border: thin solid #007e7e;
-    width: 200px;
-    padding: 30px 10px;
-    text-align: center;
+    
     background :url(images/cocktailbackground.jpg) repeat-x;
 }
 #elixirs h1
@@ -33,4 +28,13 @@
 {
     background:#f88396;
     color:#0d5353;
+}
+.tableClass
+{
+   font:small/1.6em Verdana,Helvetica,Arial,sans-serif; 
+    line-height:normal;
+    border: thin solid #007e7e;
+    width: 200px;
+    padding: 30px 10px;
+    text-align: center; 
 }
