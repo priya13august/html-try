@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+    creating email input form
+  </title>
+     <script type="text/javascript">
+     function init(){
+         
+         var bodyCo=document.getElementsByTagName("body");
+         bodyCo[0].innerHTML='<label id="lblName2" for="name">Not Valid</label>';
+         console.log(bodyCo);
+         console.log(bodyCo[0].innerHTML);
+//         bodyCo.body.innerHTML="fw";
+         
+//         bodyCo.innerHTML="few";
+//             <h1>OM !</h1>
+             
+         
+//         var name="Ad";
+//        var adult=  confirm("Are you 18+ ?");
+//         if(adult){
+//             name="Ad";
+//         }else{
+//             name="Kiddo";
+//         }
+////             prompt("write ur name");
+//         var inName = document.getElementById("inName");
+//         console.log("obtained ",inName.value);
+//         inName.value=name;
+//         console.log("set obtained ",inName.value);
+     }
+     </script
+ </head>
+ 
+<body>
+ <form id="my form">
+  <fieldset>
+   <legend>creating email input form</legend>
+      <label id="lblName" for="name">Name</label>
+      <input id="inName" id="name" name="name" type="text"/><br/>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" /><br/>
+          <input type="button" onClick="init()">Get</input>
+    </fieldset>
+   </form>
+  </body>
+</html>
