@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale-1">
-    <title>Ristorante Con Fusion</title>
+    <title>The Kitchen</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -14,7 +14,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top role=navigation">
+    
+    <nav class="navbar navbar-inverse navpills-fixed-top role=navigation">
+        
         <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -23,17 +25,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Ristorante conFusion</a>
+            <a class="navbar-brand" href="index.html"><img src="img/thekitchen.jpg" height=30 width=41></a>
         </div>
+            
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"
+                    <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
                          aria-hidden="true"></span> Home</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-star"></span> Top
-                         Destinations</a></li>
+                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"></span> About us</a></li>
                 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                        <a href="menu.html" class="dropdown-toggle" data-toggle="dropdown"
                          role="button" aria-haspopup="true" aria-expanded="false">
                          Menu <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -47,8 +49,24 @@
                             <li><a href="#">Weekend Brunch</a></li>
                         </ul>
                      </li>
-                <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
+                    
+                    <form class="navbar-form navbar-right" role="email id">
+                        
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" class="form-control" name="checkbox"> 
+                            Remember me
+                        </div>
+                        <button type="sign in" class="btn btn-primary">sign in</button>
+                    </form>
             </div>
         </div>
     </nav>
@@ -60,15 +78,21 @@
         <div class="container">
             <div class="row row-header">
                 <div class="col-xs-12 col-sm-8">
-                    <h1>Ristorante con Fusion</h1>
+                    <h1>The Kitchen</h1>
                     <p style="padding:40px;"></p>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-2">
+                    <p style="padding:20px;"></p>
+                    <img src="img/thekitchen.jpg" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <p style="padding:20px;"></p>
+                   <p><a class="btn btn-primary btn-warning" href="#reserveTable" role="button">Reserve Table</a></p>
+                </div>
                 </div>
             </div>
-        </div>
-    </header>`
+    </header>
 
     <div class="container">
         <div class="row row-content">
@@ -77,12 +101,26 @@
                 <h3 align=center>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                <p><a  href="#">More &raquo;</a></p>
+                 <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         src="img/uthappizza.png" alt="Uthappizza">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">Uthappizza <span class="label label-danger">Hot</span> <span class="badge">$5.49</span></h2>
+                        <p>A unique combination of Indian Uthappam (pancake) and
+                          Italian pizza, topped with Cerignola olives, ripe vine
+                          cherry tomatoes, Vidalia onion, Guntur chillies and
+                          Buffalo Paneer.</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>  
+    <hr>
 
 
         <div class="container">
@@ -92,12 +130,23 @@
                 <h3 align=center>This Month's Promotions</h3>
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2>Weekend Grand Buffet</h2>
+                <div class="media">
+                <div class="media-body">
+                <h2>Weekend Grand Buffet<span class="label label-danger">New</span></h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-                <p><a href="#">More &raquo;</a></p>
+                 <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                </div>
+                    <div class="media-right">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         src="img/buffet.png" alt="Buffet">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <hr>
 
         <div class="container">
             <div class="row row-content">
@@ -106,37 +155,122 @@
                 <h3 align=center>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-                <p><a href="#">More &raquo;</a></p>
+                 <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         src="img/orange_med.jpg" alt="orange">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p>Award winning three-star Michelin chef with wide
+                         International experience having worked closely with
+                         whos-who in the culinary world, he specializes in
+                          creating mouthwatering Indo-Italian fusion experiences.
+                         </p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <hr>
 
-
-    <footer class="row-footer">
+    <div id="reserveTable">
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 ">
+                <p style="padding:20px;"></p>
+              <h3>Reserve a Table</h3> 
+           </div>
+    
+            
+            <div class="col-xs-12 col-sm-9">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                    <label for="Number of Guests" class="col-sm-2 control-label">Number of Guests</label>
+                        <div class="col-xs-12 col-sm-2 col-push-8">
+                            <select class="form-control">
+                                <option value="one">1</option>
+                                <option value="two">2</option>             
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                                <option value="nine">9</option>
+                                <option value="ten">10</option>
+                            </select>
+                        </div>
+                    </div>
+           
+                    
+            <div class="form-group">
+                    <label for="date and time" class="col-xs-12 col-sm-2 control-label">Date and Time</label>
+                        <div class="col-xs-5 col-sm-4 col-push-3" >
+                            <div class="input-group">
+                                <input type="date" class="form-control" id="date" name="date" placeholder="date" >
+                                <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                    </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xs-5 col-sm-6 col-push-7">
+                            <div class="input-group">
+                            <input type="time" class="form-control" id="time" name="time" placeholder="12:00 pm">
+                            <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                            </div>
+                </div>
+                        </div>
+             </div>
+                    
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="Reserve a Table" class="btn btn-primary">Reserve a Table</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="alert alert-warning	alert-dismissible" role="alert">	
+                            <button	type="button" class="close"	data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times</span>	
+                            </button>	
+                                <strong>Warning:</strong> Please		
+                        <a href="tel:650 431 8483" class="alert-link">call</a> us to reserve for more than six guests.	
+                    </div>	
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+</div>
+                    
+<footer class="row-footer">
         <div class="container">
             <div class="row">             
                 <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1"> 
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-6 col-sm-5"> 
                     <h5>Our Address</h5>
                     <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
+		               201 w california avenue<br>
+                      sunnyvale, california<br>
+                      94086.<br>
+		              <i class="fa fa-phone"></i>: 650 431 8483<br>
+		              <i class="fa fa-fax"></i>: 650 431 8483<br>
 		              <i class="fa fa-envelope"></i>: 
-                                 <a href="mailto:confusion@food.net">confusion@food.net</a>
+                                 <a href="mailto:priya13august@gmail.com">priya13august@gmail.com</a>
                     </address>
                 </div>
                <div class="col-xs-12 col-sm-4"> 
@@ -151,11 +285,12 @@
                 </div>
                 <div class="col-xs-12">
                     <p style="padding:10px;"></p>
-                    <p align=center>� Copyright 2015 Ristorante Con Fusion</p>
+                    <p align=center>� Copyright 2015 The Kitchen</p>
                 </div>
             </div>
         </div>
     </footer>
+            
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
