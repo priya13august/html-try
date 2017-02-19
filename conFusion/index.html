@@ -25,7 +25,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="img/thekitchen.jpg" height=30 width=41></a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.jpeg" height=30 width=41></a>
         </div>
             
             <div id="navbar" class="navbar-collapse collapse">
@@ -49,27 +49,51 @@
                             <li><a href="#">Weekend Brunch</a></li>
                         </ul>
                      </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html"> 
+                    <i class="fa fa-envelope-o"></i>Contact</a></li>
                 </ul>
-                    
-                    <form class="navbar-form navbar-right" role="email id">
-                        
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="password" class="form-control" name="password" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" class="form-control" name="checkbox"> 
-                            Remember me
-                        </div>
-                        <button type="sign in" class="btn btn-primary">sign in</button>
-                    </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a data-toggle="modal" data-target="#loginModal">
+                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </nav>
+    
+     <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="email">Email Address</label>
+                            <input type="email" class="form-control input-sm"  id="email" placeholder="Email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="sr-only" for="password">Password</label>
+                            <input type="password" class="form-control input-sm" id="password" placeholder="Password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-info btn-sm">Sign in</button>
+                        <button type="button" class="btn btn-default btn-sm"
+                       data-dismiss="modal">Cancel</button>
+                    </form>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <header class="jumbotron"> 
 
@@ -84,17 +108,173 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:20px;"></p>
-                    <img src="img/thekitchen.jpg" class="img-responsive">
+                    <img src="img/logo.jpeg" class="img-responsive">
                 </div>
-                <div class="col-xs-12 col-sm-2">
-                    <p style="padding:20px;"></p>
-                   <p><a class="btn btn-primary btn-warning" href="#reserveTable" role="button">Reserve Table</a></p>
-                </div>
+                <div  id="form" class="col-xs-12 col-sm-2">
+                    <p style="padding:40px;"></p>
+                    <a type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reservationForm">Reserve Table</a>
+                    <div id="reservationForm" class="modal fade" tabindex="-1" role="dialog">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Reserve Table</h4>
+                              </div>
+                <div class="modal-body">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="Number of Guests" class="col-sm-2 control-label">Number of Guests</label>
+                                        <div class="col-xs-12 col-sm-2 col-push-8">
+                                            <select class="form-control">
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>             
+                                                <option value="three">3</option>
+                                                <option value="four">4</option>
+                                                <option value="five">5</option>
+                                                <option value="six">6</option>
+                                                <option value="seven">7</option>
+                                                <option value="eight">8</option>
+                                                <option value="nine">9</option>
+                                                <option value="ten">10</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                    <label for="Section" class="col-xs-12 col-sm-2 control-label">Section</label>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <div class="btn-group" data-toggle="buttons">
+                                              <label class="btn btn-success active">
+                                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Non Smoking 
+                                              </label>
+                                                <label class="btn btn-danger">
+                                                <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                              </label>
+                                            </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                    
+                            <div class="form-group">
+                                    <label for="date and time" class="col-xs-12 col-sm-2 control-label">Date and Time</label>
+                                        <div class="col-xs-5 col-sm-4 col-push-3" >
+                                            <div class="input-group">
+                                                <input type="date" class="form-control" id="date" name="date" placeholder="date" >
+                                                <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-5 col-sm-6 col-push-7">
+                                            <div class="input-group">
+                                            <input type="time" class="form-control" id="time" name="time" placeholder="12:00 pm">
+                                            <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                                            </div>
+                                            </div>
+                                        </div>
+                             </div>
+                    </form>
+                            </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" >Reserve</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                </div>
+                                    <div class="form-group">
+                                        <div class="alert alert-warning	alert-dismissible" role="alert">
+                                            
+                                            <button	type="button-sm" class="close"	data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times</span>	
+                                            </button>
+                                          
+                                            <strong>Warning:</strong> Please<a href="tel:+1 650 431 8483" class="alert-link"> call</a> us to reserve for more than six guests.
+                                
+                                        </div>	
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </header>
 
     <div class="container">
+        <div class="row row-content">
+            
+            <d1iv class="container">
+            <div class="row row-content">
+                <div class="col-xs-12">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                </ol>
+                     <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="img-responsive"
+                         src="img/uthappizza.png" alt="Uthappizza">
+                        <div class="carousel-caption">
+                        <h2>Uthappizza  <span class="label label-danger">Hot</span> <span class="badge">$4.99</span></h2>
+                        <p>A unique combination of Indian Uthappam (pancake) and
+                          Italian pizza, topped with Cerignola olives, ripe vine
+                          cherry tomatoes, Vidalia onion, Guntur chillies and
+                          Buffalo Paneer.</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive"
+                        src="img/buffet.png" alt="Buffet">
+                        <div class="carousel-caption">
+                        <h2>Weekend Grand Buffet <span class="label label-danger label-xs">New</span></h2>
+                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                            <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive"
+                             src="img/orange_med.jpg" alt="Orange">
+                        <div class="carousel-caption">
+                                <h2>Alberto Somayya</h2>
+                                <h4>Executive Chef</h4>
+                                <p>Award winning three-star Michelin chef with wide
+                                    International experience having worked closely with
+                                    whos-who in the culinary world, he specializes in
+                                    creating mouthwatering Indo-Italian fusion experiences.
+                                </p>
+                                    <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                        </div>
+                    </div>
+                </div>
+                     <!-- Controls -->
+                <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                    <div class="btn-group" id="carouselButtons">
+                    <button class="btn btn-danger btn-sm" id="carousel-pause">
+                	    <span class="fa fa-pause" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="carousel-play">
+                	    <span class="fa fa-play" aria-hidden="true"></span>
+                    </button>
+                    </div>
+   
+                </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
         <div class="row row-content">
             <div class="col-xs-12 col-sm-3 col-sm-push-9">
                 <p style="padding:20px;"></p>
@@ -118,8 +298,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>  
+            </div>
+      </div>
     <hr>
 
 
@@ -178,76 +358,7 @@
     </div>
     <hr>
 
-    <div id="reserveTable">
-    <div class="container">
-        <div class="row row-content">
-            <div class="col-xs-12 col-sm-3 ">
-                <p style="padding:20px;"></p>
-              <h3>Reserve a Table</h3> 
-           </div>
-    
-            
-            <div class="col-xs-12 col-sm-9">
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                    <label for="Number of Guests" class="col-sm-2 control-label">Number of Guests</label>
-                        <div class="col-xs-12 col-sm-2 col-push-8">
-                            <select class="form-control">
-                                <option value="one">1</option>
-                                <option value="two">2</option>             
-                                <option value="three">3</option>
-                                <option value="four">4</option>
-                                <option value="five">5</option>
-                                <option value="six">6</option>
-                                <option value="seven">7</option>
-                                <option value="eight">8</option>
-                                <option value="nine">9</option>
-                                <option value="ten">10</option>
-                            </select>
-                        </div>
-                    </div>
-           
-                    
-            <div class="form-group">
-                    <label for="date and time" class="col-xs-12 col-sm-2 control-label">Date and Time</label>
-                        <div class="col-xs-5 col-sm-4 col-push-3" >
-                            <div class="input-group">
-                                <input type="date" class="form-control" id="date" name="date" placeholder="date" >
-                                <div class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                                    </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-xs-5 col-sm-6 col-push-7">
-                            <div class="input-group">
-                            <input type="time" class="form-control" id="time" name="time" placeholder="12:00 pm">
-                            <div class="input-group-addon">
-                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                            </div>
-                </div>
-                        </div>
-             </div>
-                    
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="Reserve a Table" class="btn btn-primary">Reserve a Table</button>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <div class="alert alert-warning	alert-dismissible" role="alert">	
-                            <button	type="button" class="close"	data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times</span>	
-                            </button>	
-                                <strong>Warning:</strong> Please		
-                        <a href="tel:650 431 8483" class="alert-link">call</a> us to reserve for more than six guests.	
-                    </div>	
-                    </div>
-                </form>
-            </div>
-        </div> 
-    </div>
-</div>
+   
                     
 <footer class="row-footer">
         <div class="container">
@@ -267,8 +378,8 @@
 		               201 w california avenue<br>
                       sunnyvale, california<br>
                       94086.<br>
-		              <i class="fa fa-phone"></i>: 650 431 8483<br>
-		              <i class="fa fa-fax"></i>: 650 431 8483<br>
+		              <i class="fa fa-phone"></i>: +1 650 431 8483<br>
+		              <i class="fa fa-fax"></i>: +1 650 431 8483<br>
 		              <i class="fa fa-envelope"></i>: 
                                  <a href="mailto:priya13august@gmail.com">priya13august@gmail.com</a>
                     </address>
@@ -293,6 +404,23 @@
             
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+         });
+    </script>
+                <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+                          $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+                        $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
 </body>
 
 </html>

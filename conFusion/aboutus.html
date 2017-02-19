@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -27,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="img/thekitchen.jpg" height=30 width=41></a>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.jpeg" height=30 width=41></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:20px;"></p>
-                    <img src="img/thekitchen.jpg" class="img-responsive">
+                    <img src="img/logo.jpeg" class="img-responsive">
                 </div>
             </div>
         </div>
@@ -76,29 +76,22 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-               <ul class="breadcrumb">
-                   <li><a href="index.html">Home</a></li>
-                   <li class="active">About Us</li>
-               </ul>
+            <div class="col-xs-12 col-sm-10">
+                <div class="row">
+                   <div class="col-xs-12">
+                        <ul class="breadcrumb">
+                           <li><a href="index.html">Home</a></li>
+                            <li class="active">About Us</li>
+                        </ul>
             </div>
-         </div>
+            <div class="col-xs-12">
+                <h3>About Us</h3>
+                <hr>  
+            </div>
+        </div>
         
-        
-    <div class="row row-content">
-                <div class="col-xs-12 col-sm-3 col-sm-push-9">
-                <p style="padding:20px;"></p>
-                </div>
-                <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                    <h3>About Us</h3>
-                    <hr>  
-                </div>
-        
-        
-        
-    <div class="row row-content">
-            <div class="col-xs-12 col-sm-8">
-                <p style="padding:20px;"></p>
+    <div id="preference" class="row row-content">
+         <div class="col-xs-12 col-sm-6 col-lg-8">
                     <h2>Preference</h2>
                     <h4>Quality & Cleaniness</h4>
                     <p>To ensure that each guest receives prompt, professional, friendly and courteous service. To maintain a clean, comfortable and well maintained premises for our guests and staff. To provide at a fair price – nutritional, well-prepared meals – using only quality ingredients. To ensure that all guests and staff are treated with the respect and dignity they deserve. To thank each guest for the opportunity to serve them. By maintaining these objectives we shall be assured of a fair profit that will allow us to contribute to the community we serve.</p>
@@ -114,7 +107,7 @@
                     </blockquote>
                 </div>
             </div>
-       <div class="col-xs-12 col-sm-4">
+       <div class="col-xs-12 col-sm-6 col-lg-4">
             <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Facts At a Glance</h3>
@@ -134,39 +127,64 @@
                 </div>
             </div>
         </div>
-<hr>        
-     
+    <hr>       
     
-        <div class="row row-content">
-            <div class="col-xs-12 col-sm-3 col-sm-push-9">
-                <p style="padding:20px;"></p>
-            </div>
-            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2>Description</h2>
-                <p>Located in Canada, Brannigans Restaurant has seen 25 years of serving food especially to Victorians and tourists in British Columbia. They serve country and skillet breakfasts, pastas, traditional dinners, appetizers, wraps, etc., and they also have a children’s menu catered particularly to kids under 12 years old. </p>
-            </div>
-            
-            <div class="col-xs-12 col-sm-3 col-sm-push-9">
-                <p style="padding:20px;"></p>
-            </div>
-            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2>Mike Baxtor <small>Star chef</small></h2>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+        <div id="corporate" class="row row-content">
+            <div class="col-xs-12 col-sm-10">
+                <h2>Corporate Leadership</h2>
+                
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingPeter">
+                        <h3 class="panel-title">
+                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#peter" aria-expanded="true" aria-controls="peter"> Peter Pan <small>Chief Epicurious Officer</small></a>
+                        </h3>
                 </div>
-            
-            <div class="col-xs-12 col-sm-3 col-sm-push-9">
-                <p style="padding:20px;"></p>
-            </div>
-                <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2>Alberto Somayya <small>Executive chef</small></h2>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <div role="tabpanel" class="panel-collapse collapse in" id="peter" aria-labelledby="headingPeter">
+                            <div class="panel-body">
+                                <p>Our CEO Peter Pan, credits his hard working team and his interest in food for his restaurent. It is the largest    Asian segment restaurant chain in the United States, where it was founded and is mainly located (in addition to    other countries and territories in North America and Asia). his restaurants were traditionally located in          shopping mall food courts, but the chain now operates units in many other environments and formats, including      stand-alone restaurants, as well as universities, casinos, airports, military bases, amusement parks and other      venues. </p>
+                            </div>
+                        </div>
             </div>
         </div>
-            <hr>
+                
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingAlberto">
+                        <h3 class="panel-title">
+                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#alberto" aria-expanded="true" aria-controls="alberto">Alberto Somayya <small>Star Chef</small></a>
+                        </h3>
+                </div>
+                        <div role="tabpanel" class="panel-collapse collapse" id="alberto" aria-labelledby="headingAlberto">
+                            <div class="panel-body">
+                                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                            </div>
+                        </div>
+            </div>
+        </div> 
+                
+                
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingMike">
+                        <h3 class="panel-title">
+                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#mike" aria-expanded="true" aria-controls="mike">Mike Baxtor <small>Chief Food Officer</small></a>
+                        </h3>
+                </div>
+                        <div role="tabpanel" class="panel-collapse collapse" id="mike" aria-labelledby="headingMike">
+                            <div class="panel-body">
+                                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                            </div>
+                        </div>
+            </div>
+            </div>  
+        </div>
+     </div>
+        <hr>
         
         
-            <div class="row row-content">
-                <div class="col-xs-12 col-sm-9">
+            <div id="facts" class="row row-content">
+                <div class="col-xs-12 col-sm-10">
                     <h2>Facts &amp; Figures</h2>
                         <div class="table-responsive">
                             <table class="table table-striped">
@@ -203,13 +221,18 @@
                             </table>
                         </div>
                     </div>
-                
-                <div class="col-xs-12 col-sm-3">
-                <p style="padding:20px;"></p>
-                </div>
             </div>
         </div>
-        
+            <nav class="hidden-xs col-sm-2" id="myScrollspy">
+            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                <li><a href="#preference">Preferences</a></li>
+                <li><a href="#corporate">Corporate</a></li>
+                <li><a href="#facts">Facts</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+   
         
 
     <footer class="row-footer">
@@ -253,10 +276,10 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    </div>
-        
+    
 </body>
 
 </html>
