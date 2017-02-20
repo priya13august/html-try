@@ -1,0 +1,26 @@
+{
+  "name": "conFusion",
+  "homepage": "https://github.com/priya13august/html-try",
+  "authors": [
+    "Priya <priya13august@gmail.com>"
+  ],
+  "description": "restaurent webpage",
+  "main": "index.html",
+  "keywords": [
+    "conFusion",
+    "The",
+    "Kitchen"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

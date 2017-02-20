@@ -1,0 +1,40 @@
+@font-face
+{
+    font-family: "Emblema One";
+    src: url("emblema font/emblema-one-v5-latin/emblema-one-v5-latin-regular.woff"),
+    url("emblema font/emblema-one-v5-latin/emblema-one-v5-latin-regular.ttf");
+}
+#elixirs
+{
+    
+    background :url(images/cocktailbackground.jpg) repeat-x;
+}
+#elixirs h1
+{
+   color:black;
+}
+#elixirs h2
+{
+    color: crimson;
+}
+#elixirs a:link
+{
+    color: #007e7e;
+}
+#elixirs a:visited
+{color:brown;
+}
+#elixirs a:hover
+{
+    background:#f88396;
+    color:#0d5353;
+}
+.tableClass
+{
+   font:small/1.6em Verdana,Helvetica,Arial,sans-serif; 
+    line-height:normal;
+    border: thin solid #007e7e;
+    width: 200px;
+    padding: 30px 10px;
+    text-align: center; 
+}

@@ -1,0 +1,87 @@
+
+@font-face
+{
+    font-family: "Emblema One";
+    src: url("emblema font/emblema-one-v5-latin/emblema-one-v5-latin-regular.woff"),
+    url("emblema font/emblema-one-v5-latin/emblema-one-v5-latin-regular.ttf");
+}
+.row-header{
+    margin:0px auto;
+    padding:10px;
+}
+
+.row-content{
+    margin:0px auto;
+    padding:60px 0px 60px 0px;
+    border-botom: 1px ridge;
+    min-height:400px;
+    background-color: darkseagreen;
+}   
+
+.row-footer{
+   background-color: #AfAfAf;
+   margin:0px auto;
+   padding:20px 0px 20px 0px; 
+}
+
+.jumbotron{
+    padding:30px 30px 30px 30px;
+    margin:30px auto;
+    background: #669999;
+    font-family: "Emblema One", sans-serif;
+    color: floralwhite;
+}
+
+
+address{
+    font-size: 80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-inverse {
+     background: #003399;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background: #003366;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+ .navbar-inverse .navbar-nav > .open > a:hover,
+ .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background: #6699cc;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: #6699cc;
+    color:#eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
+    color:#000000;
+}
+.widewrapper {
+  width: 100%;
+}
+.widewrapper > img {
+  width: 100%;
+}
+.post-content {
+  background: none repeat scroll 0 0;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+

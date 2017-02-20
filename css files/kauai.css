@@ -1,0 +1,131 @@
+@font-face
+{
+    font-family: "Emblema One";
+    src: url("emblema font/emblema-one-v5-latin/emblema-one-v5-latin-regular.woff"),
+    url("emblema font/emblema-one-v5-latin/emblema-one-v5-latin-regular.ttf");
+}
+body
+  {
+      background-color:#edda57;
+      font-family: Georgia, "Times New Roman", Times, serif ;
+      font-size: small;
+      margin: 5px;
+      line-height: 1.6em;
+}
+   h1
+{
+    font-family: "Emblema One", sans-serif;
+    font-size: 200%;
+    color: brown;
+}
+h2
+{
+    font-size: 150%;
+    font-weight: normal;
+    color:brown;
+}
+
+.blockquote
+{
+    font-size: 100%;
+    color:black;
+    text-align:justify;
+}
+   
+em
+{
+    font-family: serif;
+}
+
+#header
+{ 
+    
+    margin: 10px 10px 0px 10px;
+} 
+#allcontent
+{
+    width: 1000px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #95ece2;
+    margin-left: auto;
+    margin-right: auto;
+}
+#main
+{
+    display: table-cell;
+    background-color:#d8fbd8;
+    font-size: 105%;
+    padding: 15%;
+    vertical-align: top;
+}
+#footer
+{
+    background-color: brown;
+    color: beige;
+    text-align: center;
+    padding:10px;
+    margin: 0px 10px 10px 10px;
+    font-size: 90%;
+}
+#heighlights
+{
+    display: table-cell
+    background-color: #ccefe2;
+    font-size: 105%;
+    text-align: center;
+    padding: 15px;
+    vertical-align: top;
+    position: absolute;
+    top: 628px;
+    right: 100px;
+    width: 200px;
+    float:right;
+}
+#heighlights h2
+{
+    color: black;
+}
+#tablecontainer
+{
+    display: table;
+    border-spacing: 10px;
+}
+#tablerow
+{
+    display: table-row;
+}
+.Intro
+{
+    line-height: 1.9em;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times,serif;
+    color: whitesmoke;
+    font-size-adjust: auto;
+    boarder_color: black;
+    boarder-width: 1px;
+    boarder-style: dashed;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+    background-color:#069d66;
+    padding: 25px;
+    margin: 30px;
+    margin-right: 250px;
+    background-image: url(images/doll.jpeg);
+    background-repeat:no-repeat;
+    background-position:right;
+    }
+.slogan
+{
+    font-size: 120%;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+#header img#headerSlogan
+{
+    float: right;
+}
+
