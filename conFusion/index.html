@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale-1">
     <title>The Kitchen</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/mystyle.css" rel="stylesheet">
 </head>
@@ -53,8 +54,7 @@
                     <i class="fa fa-envelope-o"></i>Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a data-toggle="modal" data-target="#loginModal">
-                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    <li><a id="Login"><span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                 </ul>
 
@@ -63,7 +63,7 @@
     </nav>
     
      <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+         <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
@@ -82,9 +82,7 @@
                             <input type="password" class="form-control input-sm" id="password" placeholder="Password">
                         </div>
                         <div class="checkbox">
-                            <label>
-                                <input type="checkbox">Remember me
-                            </label>
+                            <label><input type="checkbox">Remember me</label>
                         </div>
                         <button type="submit" class="btn btn-info btn-sm">Sign in</button>
                         <button type="button" class="btn btn-default btn-sm"
@@ -112,13 +110,13 @@
                 </div>
                 <div  id="form" class="col-xs-12 col-sm-2">
                     <p style="padding:40px;"></p>
-                    <a type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reservationForm">Reserve Table</a>
+                    <a type="button" id="tableReservation" class="btn btn-warning btn-block" data-target="#reservationForm">Reserve Table</a>
                     <div id="reservationForm" class="modal fade" tabindex="-1" role="dialog">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">Reserve Table</h4>
+                                <h4 class="modal-title" >Reserve Table</h4>
                               </div>
                 <div class="modal-body">
                             <form class="form-horizontal" role="form">
@@ -203,7 +201,7 @@
     <div class="container">
         <div class="row row-content">
             
-            <d1iv class="container">
+            <div class="container">
             <div class="row row-content">
                 <div class="col-xs-12">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
@@ -401,16 +399,22 @@
             </div>
         </div>
     </footer>
+        </div>
+    </div>
             
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
     
     <script>
         $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
          });
     </script>
-                <script>
+                
+            
+    <script>
         $(document).ready(function(){
             $("#mycarousel").carousel( { interval: 2000 } );
                           $("#carousel-pause").click(function(){
@@ -421,6 +425,23 @@
             });
         });
     </script>
+    
+    <script>
+        $('#Login').on('click', function() {
+            $('#loginModal').modal('toggle');   
+        });     
+
+    </script>
+    
+     <script>
+         $("#tableReservation").click(function(){
+
+         // show Modal
+         $('#reservationForm').modal('show');
+            });
+    </script>
+    
+    
 </body>
 
 </html>
