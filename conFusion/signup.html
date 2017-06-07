@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <title>dentalcare</title>
+    
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/patientform.css" rel="stylesheet">
+</head>
+
+<body>
+    
+<div class="container">
+       
+   
+        <div id="newPatient" class="wrapper">
+            <h2>Sign Up New Patient Account</h2>
+        </div>
+    
+       
+   
+   
+
+    <div class="wrapper">
+        <h2>New Account Information</h2>
+    
+   <div class="row row-content">
+            <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <label for="firstname" class="col-sm-6 control-label">First Name*</label>                        
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastname" class="col-sm-6 control-label">Last Name*</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="">
+                    </div>
+            </form>
+   
+    
+            <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <label for="telnum" class="col-xs-6 control-label">Contact Tel.*</label>
+                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="">                          
+                     </div>
+                       
+                        
+                    <div class="form-group">
+                        <label for="emailid" class="col-sm-6 control-label">Email</label>
+                        <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                    </div>
+            </form>
+    
+                   
+            <form class="form-inline" role="form">
+                     <div class="form-group">
+                         
+                         <label for="date" class="col-xs-6 control-label"> Appointent Date </label>
+                         
+                        <input type="date" class="form-control" id="date" name="date" placeholder="date" >
+                    </div>
+            </form>
+        </div>
+    
+        <div class="row row-content">
+                <div class="form-group">
+                        <label for="feedback" class="col-sm-6 control-label">Please describe your symptoms</label>
+                        <textarea class="form-control" id="feedback" name="feedback" rows="6"></textarea>
+                 </div>
+                       <small>By clicking the Submit button you agree to the </small><a href="#t&c.html">Terms and conditions</a>
+                        <h6>*Required fields</h6>
+
+                      <div class="col-sm-6">
+                            <button type="submit" class="btn-lg btn-primary">Submit</button>
+                      </div>
+            </div>
+         </div>
+    </div>
+     
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+    </body>
+</html>
